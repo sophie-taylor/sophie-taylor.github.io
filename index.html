@@ -11,18 +11,22 @@
         
     </head>
 	<body id=home>
+        
+        
+    <button onclick="topFunction()" id="btn2top" title="Top">Back to Top</button>
+        
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container-fluid">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#work">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#interests">Interests</a>
@@ -39,57 +43,99 @@
         </div>
     </header>
 
+<div class="container">
     <div class="row">
-      <div class="col-2"; style="background-color:#9f4fb8">
-          <img class="im-animation" src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" width="120" height="120">
+      <div class="col-4"; style="background-color:white; display: flex; align-items: center; justify-content: center;">
+
+         <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" style="border-radius:50%; width=200px; height:200px;">
+
       </div>
-      <div class="col-8"; style="background-color:aliceblue">
-          <br>
-          <div style="font-size: 30px">Welcome!</div>
+      <div class="col-8"; style="background-color:white">
+          <br><br>
+          <div style="font-size: 30px">Welcome!</div><hr>
           My name is Sophie Taylor and this is my personal website. 
           I am a software developer for a leading flood risk management company, 
-          with experience in both front-end and back-end development.<br><br><br>
+          with experience in both front-end and back-end development.<br><br>
+          I have particular expertise in Python programming and spatial analysis, as well as front-end web development.<br><br><br>
       </div>
-      <div class="col-2"; style="background-color:#9f4fb8">
-      </div>
-    </div>
+    </div>  
+</div>      
 
+        
       <section id="education">  
-          <h2>Education</h2>
-          <br><br><br><br><br>
+          <div class="container">
+          <h2>My Education</h2><hr>           
             <div class="row">
-              <div class="col-4"; style="text-align: center">
-                  Skipton Girls High School
-              </div>
-              <div class="col-4"; style="text-align: center">
-                  Newcastle University
-              </div>
-              <div class="col-4"; style="text-align: center">
-                  Manchester University
-              </div>
+                
+              <div class="col-4">           
+                    <div class="card">
+                      <img src="images/sghs.jpg" alt="sghs" style="width:100%">
+                      <div class="container">
+                        <h5 style="text-align: center">Skipton Girls High School</h5>
+                        <p class="center" style="color: grey">2007-2014</p>
+                          <p class="center">
+                              A-Levels: Maths (B), Geography (B) and Psychology (C)<br>
+                          </p>
+                        <p style="text-align: center"><button class="button">Read More</button></p>
+                      </div>
+                    </div>     
+                </div>
+                
+     
+              <div class="col-4">           
+                    <div class="card">
+                    <img src="images/newcastle.jpg" alt="newcastle" width=100%>
+                      <div class="container">
+                        <h5 style="text-align: center">Newcastle University</h5>
+                        <p class="center" style="color: grey">2014-2017</p>
+                          <p class="center">
+                              BSc. (Honours) Physical Geography - Upper Second Class 2:1<br>
+                          </p>
+                        <p style="text-align: center"><button class="button">Read More</button></p>
+                      </div>
+                    </div>
+                </div>
+                
+              <div class="col-4">           
+                    <div class="card">
+                    <img src="images/manchester.jpg" alt="manchester" width=100%>
+                      <div class="container">
+                        <h5 style="text-align: center">Manchester University</h5>
+                        <p class="center" style="color: grey";>2017-2018</p>
+                          <p class="center">
+                              MSc. (Honours) Geographical Information Science - Distinction<br>
+                          </p>
+                        <p class="center"><button class="button">Read More</button></p>
+                      </div>
+                    </div>        
+                </div> 
+                
             </div>
-          <br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br>
+          </div>
+          <br><br><br>
         </section>
 
       <section id="work">    
-        <strong><h2>Work Experience</h2></strong>
-        <br><br><br><br><br><br><br><br><br><br>
+        <h2>Work Experience</h2><hr>
+        <br><br>
       </section>
 
-
+      <section id="skills">    
+        <h2>Skills</h2><hr>
+        <br><br>
+      </section>
 
       <section id="interests">    
-        <h2>Interests</h2>
-        <br><br><br><br><br><br><br><br><br><br>
+        <h2>Interests</h2><hr>
+        <br><br>
       </section>
 
         
-        
+
       <div class="footer">
         <div class="row">
           <div class="col-4">
-              Contact me by...
+              Contact me!
           </div>
           <div class="col-4">
               Email: sophie_taylor96@yahoo.co.uk
@@ -100,4 +146,31 @@
         </div>
       </div>
 
+        
+        
+        
+<script>
+//Get the button
+var mybutton = document.getElementById("btn2top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+        
+        
+        
     </body>

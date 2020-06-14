@@ -12,11 +12,7 @@ h2 {
     font-size: 30px;
     text-align: center;
     font-family: sans-serif;
-      position: absolute;
-  background: rgb(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding:30px;
+  color:black;
 }
 
 h3 {
@@ -27,6 +23,9 @@ h3 {
 }
 
 
+p {
+    font-size: 14px;
+}
 
 .im-content {
   position: absolute;
@@ -77,19 +76,57 @@ text-shadow: 2px 2px 3px black;
     padding-top:3px;
 }
 
+p.center {
 
+    text-align: center;
 
-.im-animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    margin:-60px 0 0 -60px;
-    -webkit-animation:spin 10s linear infinite;
-    -moz-animation:spin 10s linear infinite;
-    animation:spin 10s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#btn2top {
+  display: none;
+  position: fixed;
+  bottom: 38px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#btn2top:hover {
+  background-color: #9700c7;
+}
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
