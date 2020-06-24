@@ -2,7 +2,7 @@ h1 {
     font-family: sans-serif;
     font-size: 20;
     font-weight: bolder;
-    color: #e285ff;
+    color: #f785ff;
     text-align: center;
     text-shadow: 3px 3px 5px black;
     letter-spacing: 1px;
@@ -12,7 +12,10 @@ h2 {
     font-size: 30px;
     text-align: center;
     font-family: sans-serif;
-  color:black;
+    color:black;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -22,21 +25,66 @@ h3 {
     font-family: sans-serif;
 }
 
+h4 {
+    color: #9547ad;
+    text-shadow: 1px 1px 4px grey;
+}
 
+
+h5 {
+    color: black;
+
+    
+}
+
+h5.jba {
+    padding-left:1vw;
+    padding-right:15px;
+    padding-top:2px;
+    padding-bottom:2px;
+    background-color: white;
+    text-shadow: 0px 0px 5px orange;
+    font-size:1.5vw;
+    
+}
+
+
+a.nav-style {
+    color: black;
+    background-color: white;
+    width: 120px;
+    text-align: center;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+
+a.nav-style:hover {
+    color: black;
+    background-color: #9700c7;
+    text-decoration: none;
+}
 p {
     font-size: 14px;
 }
 
 .im-content {
   position: absolute;
-    top: 40%;
+  top: 40%;
   background: rgb(0, 0, 0); 
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 100%;
-  padding:25px;
+  padding:25px; 
 }
 
+.position-navbar {
+  position:fixed;
+  top: 0%;
+
+}
 
 
 img.bg {
@@ -57,7 +105,6 @@ img.bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    
   filter: grayscale(50%); 
   -webkit-filter: grayscale(50%);
   opacity: 0.5;
@@ -67,25 +114,22 @@ img.bg {
 text-shadow: 2px 2px 3px black;
    position: fixed;
    left: 0;
-   bottom: 0;
+   bottom: -1%;
    width: 100%;
-   background-color: #e285ff;
+   background-color: #f785ff;
    color: white;
    text-align: center;
-    padding-bottom:3px;
-    padding-top:3px;
+    padding-top:2px;
 }
 
 p.center {
-
     text-align: center;
-
 }
 
 #btn2top {
   display: none;
   position: fixed;
-  bottom: 38px;
+  bottom: 3.3vw;
   right: 10px;
   z-index: 99;
   font-size: 18px;
@@ -102,11 +146,27 @@ p.center {
   background-color: #9700c7;
 }
 
+p.footer-content {
+    font-size: 1.3vw;
+}
 
 
+#img-hover-zoom {
+    overflow: hidden;
+}
 
+/* Colorize-zoom Container */
+#img-hover-zoom img {
+    overflow: hidden;
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(60%);
+}
 
-
+/* The Transformation */
+#img-hover-zoom img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
 
 
 
@@ -115,7 +175,7 @@ p.center {
 }
 
 
-.button {
+.readmore {
   border: none;
   outline: 0;
   display: inline-block;
@@ -127,12 +187,12 @@ p.center {
   width: 100%;
 }
 
-.button:hover {
+.readmore:hover {
   background-color: #555;
 }
 
 
-.column {
+.column-3 {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
@@ -141,8 +201,193 @@ p.center {
 
 
 @media screen and (max-width: 650px) {
-  .column {
+  .column-3 {
     width: 100%;
     display: block;
   }
+    
+    
+    
+    
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
 }
+
+
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  background: #c5cae9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-item:nth-child(odd) .timeline-img {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+    
+  border: solid #f34fff;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+      transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.timeline-item:nth-child(even) .timeline-img {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+    
+  border: solid #f34fff;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+
+
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card p {
+  padding: 0 20px;
+}
+.timeline-card a {
+  margin-left: 20px;
+}
+
+.timeline-item .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../images/alexander-sinn-KgLtFCgfC28-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(1) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url(../images/anas-alshanti-feXpdV001o4-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url(../images/computer.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #ffffff;
+  background-color: transparent;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+
+.date {
+  background: #f34fff;
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+

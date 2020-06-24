@@ -4,125 +4,245 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <title>Sophie Taylor</title>
-        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        
+
+        <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+
     </head>
-	<body id=home>
-        
-        
-    <button onclick="topFunction()" id="btn2top" title="Top">Back to Top</button>
+
+	<body>
         
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container-fluid">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#interests">Interests</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+        
+    <button onclick="btntopFunction()" id="btn2top" title="page-top">Back to Top</button>
+        
+    
  
-    <header>
+    <header style="background-color: white;">  
         <img class="bg"; src="images/computer.jpg">
         <div class="im-content">
             <h1 style="font-size: 50px; font-weight: 600;">Sophie Taylor</h1>
             <h3>Software Developer</h3>
         </div>
+        <div class="position-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link nav-style" href="#work">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-style" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-style" href="#skills">Skills</a>
+                  </li>   
+                  <li class="nav-item">
+                    <a class="nav-link nav-style" href="#interests">Interests</a>
+                  </li>    
+                </ul>
+              </div>  
+            </nav>
+        </div>
     </header>
 
-<div class="container">
-    <div class="row">
-      <div class="col-4"; style="background-color:white; display: flex; align-items: center; justify-content: center;">
 
-         <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" style="border-radius:50%; width=200px; height:200px;">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-4"; style="display: flex; align-items: center; justify-content: center;">
+             <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="Cat" 
+                  style="border-radius:50%; width:200px; height:200px;">
+          </div>
+          <div class="col-7">
+              <h2 style="text-align: left;">Welcome!</h2><hr><br>
+              My name is Sophie Taylor and this is my personal website. 
+              I am a software developer for a leading flood risk management company, 
+              with experience in both front-end and back-end development.<br><br>
+              I have particular expertise in Python programming and spatial analysis, 
+              as well as front-end web development.<br><br><br><br><br>
+          </div>
+        </div>  
+    </div>
+        
+    <div id="img-hover-zoom">
+        <img src="images/earth-sunrise-clip.png" style="width:100vw;">
+    </div>
 
-      </div>
-      <div class="col-8"; style="background-color:white">
-          <br><br>
-          <div style="font-size: 30px">Welcome!</div><hr>
-          My name is Sophie Taylor and this is my personal website. 
-          I am a software developer for a leading flood risk management company, 
-          with experience in both front-end and back-end development.<br><br>
-          I have particular expertise in Python programming and spatial analysis, as well as front-end web development.<br><br><br>
+     <section id="work">  
+        
+        <h2>Work Experience</h2><hr>
+
+    <div style="background-image:url(images/background.jpg);
+  background-size: 100% auto; background-attachment: fixed; ">
+          
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content timeline-card js--fadeInRight">
+        <div class="timeline-img-header">
+          <h2>Front-end Developer</h2><br>
+            <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
+        </div>
+        <div class="date">24 JUNE 2020</div>
+        <p>I am currently using vue.js within docker containers to create a GUI.</p>
       </div>
     </div>  
-</div>      
 
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content timeline-card js--fadeInRight">
+        <div class="timeline-img-header">
+          <h2>Back-end Developer</h2><br>
+            <h5 class="jba" style="text-align:right;">JBA Risk Management - Graduate Scheme</h5>
+        </div>
+        <div class="date">1 NOV 2019</div>
+        <p>During this 8 months I used python to develop tools, fix bugs and develop feature requests.</p>
+      </div>
+    </div>   
+
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content timeline-card js--fadeInRight">
+        <div class="timeline-img-header">
+          <h2 style="background-color: transparent;">GIS Specialist</h2><br>
+            <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
+        </div>
+        <div class="date">28 APRIL 2019</div>
+        <p>
+            For the first 6 months in my role at JBA Risk Management I worked 
+            in the data delivery team where I modelled flooding in Europe. 
+            <br><br>
+            This involved extensive work in QGIS and ArcGIS, as well as using CLI tools created by the software teams to automate some of the processes. This gave me insight into what processes were still being manually achieved and therefore how further automation could increase efficiency.
+        </p>
+          <br>
+      </div>
+    </div>   
+
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content js--fadeInRight">
+        <h2>GIS Technician<br>
+            <span style="font-size: 20px">QC Data @ Northern Powergrid</span></h2>
+        <div class="date">10 FEB 2019</div>
+        <p>During my time at QC Data I used SMART GIS to record repairs to electricity cables.</p>
+      </div>
+    </div>   
+
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content js--fadeInRight">
+        <h2>IHR Project Support<br>
+            <span style="font-size: 20px">NHS</span></h2>
+        <div class="date">14 JAN 2019</div>
+        <p>I worked on the E-obs project, where staff transitioned from paper based to electronic patient observations on iPads.</p>
+      </div>
+    </div>               
+          
+    </div>         
+         
+      </section>
+        
         
       <section id="education">  
-          <div class="container">
           <h2>My Education</h2><hr>           
-            <div class="row">
-                
-              <div class="column">           
-                    <div class="card">
-                      <img src="images/sghs.jpg" alt="sghs" style="width:100%">
-                      <div class="container">
+            <div class=row>
+                <div class=column-3>
+                    <div class="card" data-city="sghs">
+                        <img src="images/sghs.jpg" alt="sghs" style="width:100%">
                         <h5 style="text-align: center">Skipton Girls High School</h5>
                         <p class="center" style="color: grey">2007-2014</p>
-                          <p class="center">
-                              A-Levels: Maths (B), Geography (B) and Psychology (C)<br>
-                          </p>
-                        <p style="text-align: center"><button class="button">Read More</button></p>
-                      </div>
-                    </div>     
+                        <p class="center">
+                            A-Levels: Maths (B), Geography (B) and Psychology (C)
+                        </p>
+                        <span class="dots"></span><br>
+                        <span class="more" style="display: none;">
+                            <p class="center">
+                                13 GSCE's grade A* to B, including Maths and English.
+                            </p>
+                        </span>
+                        <button onclick="readMore('sghs')" class="readMoreBtn readmore">
+                            Read more
+                        </button>
+                    </div>
                 </div>
-                
-     
-              <div class="column">           
-                    <div class="card">
-                    <img src="images/newcastle.jpg" alt="newcastle" width=100%>
-                      <div class="container">
+                <div class=column-3>
+                    <div class="card" data-city="newc">
+                        <img src="images/newcastle.jpg" alt="newcastle" width=100%>
                         <h5 style="text-align: center">Newcastle University</h5>
                         <p class="center" style="color: grey">2014-2017</p>
-                          <p class="center">
-                              BSc. (Honours) Physical Geography - Upper Second Class 2:1<br>
-                          </p>
-                        <p style="text-align: center"><button class="button">Read More</button></p>
-                      </div>
+                        <p class="center">
+                            BSc. (Honours) Physical Geography - Upper Second Class 2:1
+                        </p>
+                            <span class="dots"></span><br>
+                            <span class="more" style="display: none;">
+                                <p style="padding:5px">
+                                    I learnt the fundamentals of GIS and remote sensing in theory 
+                                    and application, acquiring skills in various software, such 
+                                    as ArcGIS, QGIS and ERDAS Imagine.
+                                    <br><br>
+                                    My final-year dissertation involved extensive work within ArcGIS, 
+                                    identifying and analysing  Martian landforms and producing numerous maps.
+                                </p> 
+                            </span>
+                        <button onclick="readMore('newc')" class="readMoreBtn readmore">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+                <div class=column-3>
+                    <div class="card" data-city="manc">
+                        <img src="images/manchester.jpg" alt="manchester" width=100%>
+                        <h5 style="text-align: center">Manchester University</h5>
+                        <p class="center" style="color: grey">2017-2018</p>
+                        <p class="center">
+                            MSc. (Honours) Geographical Information Science - Distinction
+                        </p>
+                            <span class="dots"></span><br>
+                            <span class="more" style="display: none;">
+                                <p style="padding:5px">
+                                    <b>Understanding GIS:</b> I learnt the fundamentals of developing 
+                                    software in Python. This module focused on geospatial techniques 
+                                    such as neural networks, projections and spatial indexing, using 
+                                    python libraries such as Fiona, Shapely and Mapnik. Some of my 
+                                    projects can be found 
+                                    <a href="http://github.com" target="_blank">
+                                        here.
+                                    </a>
+                                    <br><br>
+                                    <b>Remote Sensing:</b> I used JavaScript within Google Earth 
+                                    Engine Code Editor to analyse spatial and temporal changes in 
+                                    landcover from satellite imagery.
+                                    <br><br>
+                                    <b>Dissertation - </b> ‘<i>A web interface to model urban 
+                                    cooling from the Rochdale canal in Manchester city centre’:</i><br>                              
+                                    Independently programmed a complex model to calculate urban cooling 
+                                    in Python. This model was then launched to a web interface using HTML, 
+                                    JavaScript and CSS, through use of Django. This project can be found 
+                                    <a href="http://github.com" target="_blank">
+                                        here.
+                                    </a>
+                                </p>
+                            </span>          
+                        <button onclick="readMore('manc')" class="readMoreBtn readmore">Read more</button>
                     </div>
                 </div>
                 
-              <div class="column">           
-                    <div class="card">
-                    <img src="images/manchester.jpg" alt="manchester" width=100%>
-                      <div class="container">
-                        <h5 style="text-align: center">Manchester University</h5>
-                        <p class="center" style="color: grey";>2017-2018</p>
-                          <p class="center">
-                              MSc. (Honours) Geographical Information Science - Distinction<br>
-                          </p>
-                        <p class="center"><button class="button">Read More</button></p>
-                      </div>
-                    </div>        
-                </div> 
-                
             </div>
-          </div>
-          <br><br><br>
         </section>
 
-      <section id="work">    
-        <h2>Work Experience</h2><hr>
-        <br><br>
-      </section>
 
       <section id="skills">    
         <h2>Skills</h2><hr>
-        <br><br>
+
+          
+          
+          
       </section>
 
       <section id="interests">    
@@ -130,18 +250,29 @@
         <br><br>
       </section>
 
+  
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
         
 
       <div class="footer">
         <div class="row">
           <div class="col-4">
-              Contact me!
+              <p class="footer-content">Contact me!</p>
           </div>
           <div class="col-4">
-              Email: sophie_taylor96@yahoo.co.uk
+              <p class="footer-content">Email: sophie_taylor96@yahoo.co.uk</p>
           </div>
           <div class="col-4">
-              Mobile: 07397963818
+              <p class="footer-content">Mobile: 07397963818</p>
           </div>
         </div>
       </div>
@@ -150,27 +281,94 @@
         
         
 <script>
-//Get the button
-var mybutton = document.getElementById("btn2top");
+    function readMore(city) {
+        let dots = document.querySelector(`.card[data-city="${city}"] .dots`);
+        let moreText = document.querySelector(`.card[data-city="${city}"] .more`); 
+        let btnText = document.querySelector(`.card[data-city="${city}"] .readMoreBtn`);
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.textContent = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.textContent = "Read less"; 
+            moreText.style.display = "inline";
+        }
+    }
+    
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+
+    
+    
+        //Get the button
+    var mybutton = document.getElementById("btn2top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function btntopFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    
+    
+    
+$(function(){
+
+  window.sr = ScrollReveal();
+  	
+  	sr.reveal('.js--fadeInLeft', {
+	    origin: 'left',
+	    distance: '300px',
+		  easing: 'ease-in-out',
+	    duration: 800,
+	  });
+
+  sr.reveal('.js--fadeInRight', {
+    origin: 'right',
+    distance: '300px',
+    easing: 'ease-in-out',
+    duration: 800,
+  });
+    
+  sr.reveal('.js--fadeInRight', {
+    origin: 'right',
+    distance: '300px',
+    easing: 'ease-in-out',
+    duration: 800,
+  });    
+    
+
   }
+  
+  
+);
+    
+
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+
 </script>
         
-        
-        
+
     </body>
