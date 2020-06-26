@@ -191,7 +191,6 @@ p.footer-content {
   background-color: #555;
 }
 
-
 .column-3 {
   float: left;
   width: 33.3%;
@@ -201,6 +200,7 @@ p.footer-content {
 
 
 @media screen and (max-width: 650px) {
+<<<<<<< HEAD
   .column-3 {
     width: 100%;
     display: block;
@@ -390,4 +390,8 @@ p.footer-content {
 
 
 
-
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
