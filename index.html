@@ -14,15 +14,10 @@
 
     </head>
 
-	<body>
-        
-
-        
+	<body>     
     <button onclick="btntopFunction()" id="btn2top" title="page-top">Back to Top</button>
         
-    
- 
-    <header style="background-color: white;">  
+    <header style="background-color: white;">
         <img class="bg"; src="images/computer.jpg">
         <div class="im-content">
             <h1 style="font-size: 50px; font-weight: 600;">Sophie Taylor</h1>
@@ -56,11 +51,10 @@
 
     <div class="container-fluid">
         <div class="row">
-          <div class="col-4"; style="display: flex; align-items: center; justify-content: center;">
-             <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="Cat" 
-                  style="border-radius:50%; width:200px; height:200px;">
+          <div class="col-sm-4"; style="display: flex; align-items: center; justify-content: center;">
+             <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" class="profile-pic">
           </div>
-          <div class="col-7">
+          <div class="col-sm-7">
               <h2 style="text-align: left;">Welcome!</h2><hr><br>
               My name is Sophie Taylor and this is my personal website. 
               I am a software developer for a leading flood risk management company, 
@@ -75,30 +69,29 @@
         <img src="images/earth-sunrise-clip.png" style="width:100vw;">
     </div>
 
-     <section id="work">  
+    <section id="work">  
         
         <h2>Work Experience</h2><hr>
-
-    <div style="background-image:url(images/background.jpg);
-  background-size: 100% auto; background-attachment: fixed; ">
-          
+        <div class="timeline" style="background-image:url(images/background.jpg);
+                                     background-size:100% auto; background-attachment:fixed;">
     <div class="timeline-item">
-      <div class="timeline-img"></div>
-      <div class="timeline-content timeline-card js--fadeInRight">
-        <div class="timeline-img-header">
-          <h2>Front-end Developer</h2><br>
-            <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
-        </div>
-        <div class="date">24 JUNE 2020</div>
-        <p>I am currently using vue.js within docker containers to create a GUI.</p>
-      </div>
+        <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header">
+                    <h2>Front-end Developer</h2><br>
+                    <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
+                </div>
+                <div class="date">24 JUNE 2020</div>
+                <p>I am currently using vue.js within docker containers to create a GUI.</p>
+            </div>
     </div>  
+  
 
     <div class="timeline-item">
       <div class="timeline-img"></div>
       <div class="timeline-content timeline-card js--fadeInRight">
         <div class="timeline-img-header">
-          <h2>Back-end Developer</h2><br>
+            <h2>Back-end Developer</h2><br>
             <h5 class="jba" style="text-align:right;">JBA Risk Management - Graduate Scheme</h5>
         </div>
         <div class="date">1 NOV 2019</div>
@@ -110,7 +103,7 @@
       <div class="timeline-img"></div>
       <div class="timeline-content timeline-card js--fadeInRight">
         <div class="timeline-img-header">
-          <h2 style="background-color: transparent;">GIS Specialist</h2><br>
+          <h2>GIS Specialist</h2><br>
             <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
         </div>
         <div class="date">28 APRIL 2019</div>
@@ -146,7 +139,7 @@
           
     </div>         
          
-      </section>
+    </section>
         
         
       <section id="education">  
