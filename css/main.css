@@ -46,6 +46,40 @@ h5.jba {
     width:auto;
 }
 
+.dark {
+    background-color: black;
+    color: white;
+    background-blend-mode:lighten
+}
+
+.social {
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%
+
+}
+
+.social:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #8600d4;
+  color: white;
+}
 
 a.nav-style {
   color: black;
@@ -111,19 +145,9 @@ img.bg {
   opacity: 0.5;
 }
 
-.footer {
-text-shadow: 2px 2px 3px black;
-   position: fixed;
-   left: 0;
-   bottom: -1%;
-   width: 100%;
-   background-color: #f785ff;
-   color: white;
-   text-align: center;
-    padding-top:2px;
-}
 
-p.center {
+
+.center {
     text-align: center;
 }
 
@@ -283,25 +307,6 @@ p.footer-content {
   margin-top: 25px;
   margin-left: -15px;
 }
-
-a {
-  background: #3F51B5;
-  color: #FFFFFF;
-  padding: 8px 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
-}
-a:hover, a:active, a:focus {
-  background: #32408f;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 
 .timeline-item:nth-child(1) .timeline-img-header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg') center center no-repeat;
