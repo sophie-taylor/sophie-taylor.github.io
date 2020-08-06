@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <title>Sophie Taylor</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <title>Sophie Taylor</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    
+</head>
 
-        <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-
-    </head>
-
-	<body>     
+<body id="home">     
     <button onclick="btntopFunction()" id="btn2top" title="page-top">Back to Top</button>
         
     <header style="background-color: white;">
         <img class="bg"; src="images/computer.jpg">
-        <div class="im-content">
-            <h1 style="font-size: 50px; font-weight: 600;">Sophie Taylor</h1>
+        <div class="im-content typewriter">
+            <h1 style="font-size: 60px; font-weight: 600;">Sophie Taylor</h1>
             <h3>Software Developer</h3>
         </div>
         <div class="position-navbar">
@@ -31,14 +30,14 @@
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link nav-style" href="#home">Home</a>
+                      </li>   
                     <a class="nav-link nav-style" href="#work">Experience</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-style" href="#education">Education</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-style" href="#skills">Skills</a>
-                  </li>   
                   <li class="nav-item">
                     <a class="nav-link nav-style" href="#interests">Interests</a>
                   </li>    
@@ -49,44 +48,81 @@
     </header>
 
     <div class="container-fluid dark">
-        <div class="row" style="background-color:#700078; padding:5px">
-            <div class="col-sm-4" style="display:flex; align-items: center; justify-content: center;">
-                <p class="center" style="font-size: 16px"><i class="fa fa-phone"> 07397 963818</i></p>
+        <div class="row" style="background-color:#8093F1; padding:5px">
+            <div class="col-sm-4 absolute-center" style="padding:3px;">
+                <i class="fa fa-phone"><span style='font-family: sans-serif;'> 07397 963818</span></i>
             </div>
-            <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
-                <p class="center" style="font-size: 16px"><i class="fa fa-envelope"> sophie_taylor96@yahoo.co.uk</i></p>
+            <div class="col-sm-4 absolute-center" style="padding:3px;">
+                <i class="fa fa-envelope"> <span style='font-family: sans-serif;'> sophie_taylor96@yahoo.co.uk</span></i>
             </div>
-            <div class="col-sm-4 center" style="font-size: 22px">
+            <div class="col-sm-4 absolute-center" style="font-size: 22px;">
                 <a href="https://www.linkedin.com/in/sophie-taylor-37449b150"><i class="social fa fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100005103012750">
                     <i class="social fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/sophietaylor96/">
-                    <i class="social fa fa-instagram"></i></a>
-                
+                <a href="https://github.com/sophie-taylor">
+                    <i class="social fa fa-github"></i></a>                
                 
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-4"; style="display: flex; align-items: center; justify-content: center;">
-             <img src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" class="profile-pic">
+          <div class="col-sm-4 absolute-center">
+             <img src="images/pp.jpeg" class="profile-pic">
           </div>
           <div class="col-sm-8">
-              <h2 style="text-align: left;">Welcome!</h2><hr><br>
+              <h2 style="text-align: left;">Welcome!</h2><hr style="border:1.5px solid #B388EB">
               My name is Sophie Taylor and this is my personal website. 
               I am a software developer for a leading flood risk management company, 
-              with experience in both front-end and back-end development.<br><br>
-              I have particular expertise in Python programming and spatial analysis, 
-              as well as front-end web development.<br><br><br><br><br>
+              with experience in both frontend and backend development.<br><br>
+              I have particular expertise in using Python programming for spatial analysis of large raster, vector and CSV datasets, utilizing libraries such as gdal, pandas and numpy. I also have experience in web development, using Django to create an API and vuejs to create a GUI.<br><br><br><br><br>
           </div>
-        </div>  
+        </div>
     </div>
-
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/python.png' width=200px style='padding:10px'>
+                  <div class="overlay">
+                      <div class="text">I learnt the fundamentals of Python during my Masters degree in GIS and focused my dissertation on creating a program written in Python. I have developed these skills since at JBA, where I have been analysising data with Python for over a year.</div>
+                  </div>
+            </div>          
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/html.png' width=220px style='padding:10px'>
+                    <div class="overlay" style="background-color: #72DDF7">
+                        <div class="text">I taught myself HTML and CSS when creating a GUI as part of my Masters dissertation and further developed these skills by designing and upkeeping a website for a holiday house business.</div>    
+                    </div>
+            </div>
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/js.png' width=160px height=150px style='padding:10px'>
+                    <div class="overlay" style="background-color: #FDC5F5">
+                        <div class="text">I first gained experince using Javascript during my Masters Dissertation to create graphs and maps on a GUI. I then developed these skills in my current role as a web developer.</div>
+                  </div>   
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/vuejs.png' width=200px style='padding:10px'>
+                    <div class="overlay" style="background-color: #F7AEF8">
+                        <div class="text">I am currenly using vuejs to create a GUI.</div>
+                  </div>   
+            </div>
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/docker.png' width=180px style='padding:10px'>
+                    <div class="overlay" style="background-color: #B388EB">
+                        <div class="text">I am currently developing inside a docker container.</div>
+                  </div>   
+            </div>
+            <div class="col-sm-4 absolute-center logo-info">
+                <img src='images/django.png' width=200px style='padding:10px'>
+                    <div class="overlay">
+                        <div class="text">I first used Django during my Masters dissertation. Since then, I have used Django and Django rest framework to create APIs in my current role.</div>
+                  </div>   
+            </div>
+        </div>
+    </div>
+    <br><br>
         
-    <div id="img-hover-zoom">
-        <img src="images/earth-sunrise-clip.png" style="width:100vw;">
-    </div>
 
     <section id="work">  
         
@@ -97,11 +133,11 @@
         <div class="timeline-img"></div>
             <div class="timeline-content timeline-card js--fadeInRight">
                 <div class="timeline-img-header">
-                    <h2>Front-end Developer</h2><br>
+                    <h2>Web Developer</h2><br>
                     <h5 class="jba">JBA Risk Management - Graduate Scheme</h5>
                 </div>
                 <div class="date">24 JUNE 2020</div>
-                <p>I am currently using vue.js within docker containers to create a GUI.</p>
+                <p>I am currently creating a GUI within a docker container. For backend development I am using the web framework django to create an end point API and to process data. For frontend development I am using vuejs, as well as HTML and CSS.</p>
             </div>
     </div>  
   
@@ -110,11 +146,11 @@
       <div class="timeline-img"></div>
       <div class="timeline-content timeline-card js--fadeInRight">
         <div class="timeline-img-header">
-            <h2>Back-end Developer</h2><br>
+            <h2>Python Developer</h2><br>
             <h5 class="jba" style="text-align:right;">JBA Risk Management - Graduate Scheme</h5>
         </div>
         <div class="date">1 NOV 2019</div>
-        <p>During this 8 months I used python to develop tools, fix bugs and develop feature requests.</p>
+        <p>I used python for spatial analysis where I fixed bugs and developed feature requests in existing code, as well as coding new CLI tools for internal use by the data development teams. This involved analysis of large spatial datasets in raster, vector and CSV formats, allowing me to gain experience with libraries such as pandas, gdal, numpy and matplotlib.<br><br>My main achievement in this role was the 'Flood Report Generator'. This took input raster and vector files, coordinates and a buffer size and generated a flood assessment report PDF. This calculated flood statistics within the buffer zone and produced multiple map outputs.</p>
       </div>
     </div>   
 
@@ -128,9 +164,9 @@
         <div class="date">28 APRIL 2019</div>
         <p>
             For the first 6 months in my role at JBA Risk Management I worked 
-            in the data delivery team where I modelled flooding in Europe. 
+            in the data development team where I modelled flooding in Europe. 
             <br><br>
-            This involved extensive work in QGIS and ArcGIS, as well as using CLI tools created by the software teams to automate some of the processes. This gave me insight into what processes were still being manually achieved and therefore how further automation could increase efficiency.
+            This involved extensive work in QGIS and ArcGIS, as well as using CLI tools created by the software teams. This gave me insight into what processes were still being manually achieved and therefore how further automation could increase efficiency.
         </p>
           <br>
       </div>
@@ -152,7 +188,7 @@
         <h2>IHR Project Support<br>
             <span style="font-size: 20px">NHS</span></h2>
         <div class="date">14 JAN 2019</div>
-        <p>I worked on the E-obs project, where staff transitioned from paper based to electronic patient observations on iPads.</p>
+        <p>I worked on the E-obs project, helping staff transition from paper based patient observations to electronic observations with use of an app on an iPad.</p>
       </div>
     </div>               
           
@@ -162,7 +198,8 @@
         
         
       <section id="education">  
-          <h2>My Education</h2><hr>           
+          <h2>My Education</h2><hr> 
+          <div class="container-fluid">
             <div class=row>
                 <div class=col-md-4>
                     <div class="card" data-city="sghs">
@@ -246,39 +283,46 @@
                         <button onclick="readMore('manc')" class="readMoreBtn readmore">Read more</button>
                     </div>
                 </div>
-                
+               </div> 
             </div>
         </section>
 
 
-      <section id="skills">    
-        <h2>Skills</h2><hr>
-
-          
-          
-          
-      </section>
-
       <section id="interests">    
         <h2>Interests</h2><hr>
         <br><br>
+          
+
       </section>
-
-  
-        
-        
-        
-        
+    
+    
+    
 
         
-        
-        
-        
 
-        
-        
+<div class="container-me">
+    <div class="hair"></div>
+    <div class="hair-strand-left"></div>
+    <div class="hair-strand-right"></div>
+    <div class="hairband"></div>
+    <div class="face">  
+        <div class="left-cheek"></div>
+        <div class="right-cheek"></div>
+        <div class="eyebrow-left"></div>
+        <div class="eye-left">
+            <div class="pupil"></div>
+        </div>
+        <div class="eyebrow-right"></div>
+        <div class="eye-right">
+            <div class="pupil"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="bottom-lip"></div>
+    </div>
+</div>
         
 <script>
+
     function readMore(city) {
         let dots = document.querySelector(`.card[data-city="${city}"] .dots`);
         let moreText = document.querySelector(`.card[data-city="${city}"] .more`); 
@@ -294,33 +338,7 @@
             moreText.style.display = "inline";
         }
     }
-    
-
-
-    
-    
-        //Get the button
-    var mybutton = document.getElementById("btn2top");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function btntopFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-    
-    
+     
     
 $(function(){
 
