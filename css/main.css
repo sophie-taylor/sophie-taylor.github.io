@@ -24,6 +24,14 @@ h1 {
     blink-caret .75s step-end infinite;
 }
 
+@media screen and (max-width: 650px) {
+  .typewriter h1 {
+    overflow:visible;
+    white-space: normal;
+    animation: initial;
+  }
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -173,6 +181,7 @@ img.bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
   filter: grayscale(50%); 
   -webkit-filter: grayscale(50%);
   opacity: 0.5;
@@ -625,7 +634,7 @@ border: solid 5px #290f00;
     height:22%; 
     top:53%;
     right:6%;
-    background:lightpink;
+    background: lightpink;
     border-radius: 50%;
     opacity:0.25;
 }
